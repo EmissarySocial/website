@@ -1,0 +1,24 @@
+<article class="padded card">
+	
+	{{- if .UserCan "edit" -}}
+		<div class="float-right text-xs">
+			<a hx-get="/{{.Token}}/edit" role="button" class="button">Edit</a>
+		</div>
+	{{- end -}}
+
+	<h2>
+		{{.Label}}
+		<span class="text-thin text-gray italics"> &middot; {{.Summary}}</span>
+	</h2>
+
+	<div class="space-below">
+		<b>GET:</b> {{.Data "get"}}
+	</div>
+
+	<div class="space-below">
+		<b>POST:</b> {{.Data "post"}}
+	</div>
+
+	<code>{{.Data "code"}}</code>
+</article>
+<br>

@@ -1,0 +1,63 @@
+{
+	"templateId": "docs-step",
+	"role": "article",
+	"containedBy": ["collection"],
+	"label": "Emissary Documentation: Step",
+	"description": "Contains documentation about a single pipeline step",
+	"icon": "docs-step",
+	"schema": {
+		"type": "object",
+		"properties": {
+			"document": {"type":"object", "properties": {
+				"label": {"type": "string"},
+				"summary": {"type": "string"}
+			}},
+			"data": {"type":"object", "properties": {
+				"get": {"type": "string"},
+				"post": {"type": "string"},
+				"code": {"type": "string"}
+			}}
+		}
+	},
+	"actions": {
+		"init": {
+			"steps": [
+				{"step": "set-data", "values": {"document.label": "Step Name"}}
+			]
+		},
+		"view": {
+			"step": "view-html"
+		},
+		"edit": {
+			"roles": ["owner", "editor"],
+			"steps":[
+				{"step": "as-modal", "class":"large", "steps": [
+					{
+						"step":"form-html",
+						"form": {
+							"type": "layout-vertical",
+							"label": "Edit Step",
+							"description": "This will update the object in this state",
+							"children": [
+								{"type": "text",     "path": "document.label", "label": "Label"},
+								{"type": "text",     "path": "document.summary", "label": "Summary"},
+								{"type": "textarea", "path": "data.get", "label": "GET Description"},
+								{"type": "textarea", "path": "data.post", "label": "POST Description"},
+								{"type": "textarea", "path": "data.code", "label": "Code", "options": {"rows": 6}}
+							]
+						}
+					}, 
+					{"step": "save"}
+				]}
+			]
+		},
+		"delete": {
+			"roles": ["owner"],
+			"steps": [
+				{"step": "delete", "title": "Delete this Article?", "message": "All content and comments will be lost.  There is NO UNDO."},
+				{"step": "unpublish"},
+				{"step": "forward-to", "url":"/{{.ParentID}}"}
+			]
+		}
+	}
+}
