@@ -33,7 +33,7 @@
 			"steps":[
 				{"step": "as-modal", "class":"large", "steps": [
 					{
-						"step":"form-html",
+						"step":"edit",
 						"form": {
 							"type": "layout-vertical",
 							"label": "Edit Step",
@@ -45,7 +45,8 @@
 								{"type": "textarea", "path": "data.post", "label": "POST Description"},
 								{"type": "textarea", "path": "data.code", "label": "Code", "options": {"rows": 6}}
 							]
-						}
+						},
+						"options":["delete:/{{.StreamID}}/delete"]
 					}, 
 					{"step": "save"}
 				]}
