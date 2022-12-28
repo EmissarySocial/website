@@ -55,7 +55,7 @@
 		"delete": {
 			"roles": ["owner"],
 			"steps": [
-				{"step": "delete", "title": "Delete this Article?", "message": "All content and comments will be lost.  There is NO UNDO."},
+				{"step": "delete", "title": "Delete this Article?", "message": "All content in '{{.Label}}'.  There is NO UNDO."},
 				{"step": "unpublish"},
 				{"step": "forward-to", "url":"/{{.ParentID}}"}
 			]
