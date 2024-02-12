@@ -18,20 +18,21 @@
 		}
 	},
 	"actions": {
-		"init": {
+		"create": {
+			"roles": ["owner", "editor"],
 			"steps": [
-				{"step": "set-data", "values": {"label": "Step Name"}}
+				{"do": "set-data", "values": {"label": "Step Name"}}
 			]
 		},
 		"view": {
-			"step": "view-html"
+			"do": "view-html"
 		},
 		"edit": {
 			"roles": ["owner", "editor"],
 			"steps":[
-				{"step": "as-modal", "class":"large", "steps": [
+				{"do": "as-modal", "class":"large", "steps": [
 					{
-						"step":"edit",
+						"do":"edit",
 						"form": {
 							"type": "layout-vertical",
 							"label": "Edit Step",
@@ -46,16 +47,16 @@
 						},
 						"options":["delete:/{{.StreamID}}/delete"]
 					}, 
-					{"step": "save"}
+					{"do": "save"}
 				]}
 			]
 		},
 		"delete": {
 			"roles": ["owner"],
 			"steps": [
-				{"step": "delete", "title": "Delete this Article?", "message": "All content in '{{.Label}}'.  There is NO UNDO."},
-				{"step": "unpublish"},
-				{"step": "forward-to", "url":"/{{.ParentID}}"}
+				{"do": "delete", "title": "Delete this Article?", "message": "All content in '{{.Label}}'.  There is NO UNDO."},
+				{"do": "unpublish"},
+				{"do": "forward-to", "url":"/{{.ParentID}}"}
 			]
 		}
 	}
