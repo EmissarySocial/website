@@ -2,13 +2,13 @@
 	
 	<div class="flex-row width-100-percent">
 
-		<h2>
+		<h2 class="flex-grow-1">
 			{{.Label}}
 			<span class="text-thin text-gray italics"> &middot; {{.Summary}}</span>
 		</h2>
 
 		{{- if .UserCan "edit" -}}
-			<div class="align-right text-xs">
+			<div class="text-xs">
 				<a hx-get="/{{.Token}}/edit" role="button" class="button">Edit</a>
 			</div>
 		{{- end -}}
