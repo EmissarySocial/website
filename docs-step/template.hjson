@@ -60,7 +60,7 @@
 			steps: [
 				{do: "delete", title: "Delete this Article?", message: "All content in '{{.Label}}'.  There is NO UNDO."}
 				{do: "unpublish"}
-				{do: "forward-to", url:"/{{.ParentID}}"}
+				{do: "refresh-page"}
 			]
 		}
 	}
