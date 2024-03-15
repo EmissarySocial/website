@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" inkscape:version="0.92.1 r15371" sodipodi:docname="ActivityPub-logo-symbol.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 114 68"
+	 style="enable-background:new 0 0 114 68;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5404-0-0_00000079464974646790994210000005198503629906988178_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5406-6-3_00000012442325742479251660000013947300657384583552_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5467-2-0_00000021811661220331937900000011638497287250069889_);}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderlayer="false" borderopacity="0.14509804" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" inkscape:current-layer="layer1" inkscape:cx="-195.34129" inkscape:cy="-120.65903" inkscape:document-units="px" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:showpageshadow="false" inkscape:snap-global="true" inkscape:zoom="0.70710678" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="false" units="px">
+	<inkscape:grid  enabled="false" id="grid4572" originx="7.1437514" originy="-404.28382" type="xygrid"></inkscape:grid>
+	
+		<inkscape:grid  empspacing="12" enabled="false" id="grid4574" originx="7.1437514" originy="-404.28382" type="axonomgrid" units="mm">
+		</inkscape:grid>
+	<sodipodi:guide  id="guide5059" inkscape:locked="false" orientation="0,1" position="3278.981,1256.5057"></sodipodi:guide>
+	<sodipodi:guide  id="guide5061" inkscape:locked="false" orientation="0,1" position="3278.981,1238.2495"></sodipodi:guide>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(7.1437516,141.67967)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<path id="path5497" inkscape:connector-curvature="0" class="st0" d="M11.9,362.8"/>
+	<g id="g5197" transform="translate(-4.2352716,0.01824528)">
+		<g id="g5132-90" transform="matrix(0.9789804,0,0,0.9789804,-3157.9561,1202.4422)">
+			<g id="g5080-78" transform="matrix(0.2553682,0,0,0.2553682,2615.9213,-1125.3113)">
+				
+					<linearGradient id="path5404-0-0_00000052813685684624475280000014591429618582924969_" gradientUnits="userSpaceOnUse" x1="15519.7686" y1="2928.0801" x2="15533.0381" y2="2928.0801" gradientTransform="matrix(0.9449 0 0 -0.9449 -9049.7197 1932.8271)">
+					<stop  offset="0" style="stop-color:#F1007E"/>
+					<stop  offset="1" style="stop-color:#000000"/>
+				</linearGradient>
+				
+					<path id="path5404-0-0" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccc" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5404-0-0_00000052813685684624475280000014591429618582924969_);" d="
+					M2624.1-969.9l196.4,113.4v45.4l-196.4,113.4v-45.4l157.1-90.7l-157.1-90.7L2624.1-969.9z"/>
+				
+					<linearGradient id="path5406-6-3_00000015335573412516961690000003136737845654788781_" gradientUnits="userSpaceOnUse" x1="15519.7686" y1="2928.0801" x2="15533.0381" y2="2928.0801" gradientTransform="matrix(0.9449 0 0 -0.9449 -9049.7197 1932.8271)">
+					<stop  offset="0" style="stop-color:#F1007E"/>
+					<stop  offset="1" style="stop-color:#000000"/>
+				</linearGradient>
+				
+					<path id="path5406-6-3" inkscape:connector-curvature="0" sodipodi:nodetypes="cccc" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5406-6-3_00000015335573412516961690000003136737845654788781_);" d="
+					M2624.1-879.2l78.6,45.4l-78.6,45.4V-879.2z"/>
+			</g>
+		</g>
+		<g id="g5127-1" transform="matrix(0.9789804,0,0,0.9789804,-3157.9561,1202.4422)">
+			
+				<linearGradient id="path5467-2-0_00000020393643157039035230000016775269771972075143_" gradientUnits="userSpaceOnUse" x1="5843.249" y1="468.0415" x2="5856.5186" y2="468.0415" gradientTransform="matrix(3.7001 0 0 -3.7001 -18394.6621 393.5391)">
+				<stop  offset="0" style="stop-color:#6D6D6D"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</linearGradient>
+			
+				<path id="path5467-2-0" inkscape:connector-curvature="0" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#path5467-2-0_00000020393643157039035230000016775269771972075143_);" d="
+				M3276-1373l-50.2,29v11.6l40.1-23.2v46.3l10,5.8V-1373z M3255.9-1338.3l-20.1,11.6l20.1,11.6V-1338.3z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,38 @@
+{
+	templateId: emissary_dev_homepage
+	templateRole: homepage
+	containedBy: ["top"]
+	sort: -1
+	label: Emissary.dev Home Page
+	description: Custom HTML for the home page of emissary.dev
+	icon: home
+	schema: {
+		type: object
+		properties: {
+			label: {type: "string"}
+			summary: {type: "string"}
+		}
+	}
+	actions: {
+		create: {
+			roles: ["owner", "editor"]
+			steps: [
+				{do:"set-data", values:{token:"home", label:"Home"}}
+				{do:"save"}
+			]
+		}
+		view: {
+			do: view-html
+		}
+		edit: {
+			do: view-html
+			file: view
+		}
+		delete: {
+			roles: ["owner"]
+			steps: [
+				{do: "delete", title: "Delete Home Page?", message: "This would be a bad idea"}
+			]
+		}
+	}
+}

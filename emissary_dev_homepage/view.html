@@ -1,0 +1,211 @@
+<style>
+
+	@font-face {
+		font-family: 'custom-font';
+		src: url('/.templates/emissary_dev_homepage/resources/fredericka-the-great/FrederickatheGreat-Regular.ttf') format('truetype');
+	}
+
+	main {
+		display:block;
+	}
+
+	.banner {
+		color:white;
+		background-size: cover;
+		background-color: #0187D0;
+		background-image: url("/.templates/emissary_dev_homepage/resources/AdobeStock_569711027.jpg");
+	}
+
+	.banner h1 {
+		font-size: 5em;
+		line-height: 2em;
+		color: white;
+		text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+		font-family: 'custom-font', sans-serif;
+	}
+
+	h1 {
+		font-family: 'custom-font', sans-serif;
+		color:#184372;
+	}
+
+	.banner .with-shadow {
+		border: solid 1px  rgba(0,0,0,0.3);
+		box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	}
+
+	.icon {
+		font-size:5em;
+		color:#AAA;
+	}
+
+	section {
+		margin-bottom: 80px;
+	}
+
+	.card {
+		color:#777;
+	}
+
+	.card h2 {
+		color:#184372;
+	}
+</style>
+
+<div class="banner margin-bottom-xl">
+	<div class="margin-none align-center">
+		<img src="/.templates/emissary_dev_homepage/resources/Emissary-Wordmark-White-1200.png" class="margin-top-xl" style="height:64px;">
+	</div>
+
+	<div class="margin-top-none margin-bottom-xl align-center">
+		<h1>The Social Web Toolkit</h1>
+
+		<div>
+			<img src="/.templates/emissary_dev_homepage/resources/homepage-screenshot-1.png" class="width-3-5 margin-bottom-xl with-shadow" style="max-width:800px;">
+		</div>
+	</div>
+</div>
+
+<!--
+Red #E81416
+Orange #FFA500
+Yellow #FAEB36
+Green #79C314
+Blue #487DE7
+Indigo #4B369D
+Violet #70369D
+-->
+<div class="flex-column flex-align-center">
+	<div class="framed">
+
+		<div class="text-lg margin-bottom-xl margin-horizontal-auto align-center width-60-percent">
+			<b>Emissary</b> is the standalone Fediverse server designed for 
+			<a href="/end-users">end&nbsp;users</a>, 
+			<a href="/creators">app&nbsp;creators</a>, and 
+			<a href="/administrators">hosting&nbsp;admins</a> &mdash;
+			that gives everyone powerful new ways to <b>join the social web</b>.
+		</div>
+
+		<section class="align-center">
+			<h1>Multi-Network</h1>
+
+			<div class="columns-4">
+				<div role="link" class="card padded" script="on click go to url /protocols">
+					<div class="margin-none"><img src="/.templates/emissary_dev_homepage/resources/activitypub.svg" style="height:5em; max-width:100%;"></div>
+					<h2 class="margin-top-none">ActivityPub</h2>
+					<div>a good citizen on the Fediverse</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /protocols">
+					<div class="bi bi-rss icon" style="color:#ffa500;"></div>
+					<h2 class="margin-top-xs">Real-time RSS</h2>
+					<div>follow new and blogs using WebSub</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /protocols">
+					<div class="margin-none"><img src="/.templates/emissary_dev_homepage/resources/indiewebcamp-logo-horizontal.png" style="height:5em; max-width:100%;"></div>
+					<h2 class="margin-top-xs">IndieWeb</h2>
+					<div>MicroFormats and WebMentions for personal websites</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /developers">
+					<div class="bi bi-three-dots icon"></div>
+					<h2 class="margin-top-xs">More</h2>
+					<div>the sky is the limit</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="align-center">
+			<h1 style="color:#487DE7;">Programmable</h1>
+
+			<div class="columns-4">
+				<div role="link" class="card padded" script="on click go to url /creators">
+					<div class="bi bi-boxes icon" style="color:#487DE7;"></div>
+					<h2 class="margin-top-sm" style="color:#487DE7;">Assemble</h2>
+					<div>custom apps from tested components</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /creators">
+					<div class="bi bi-diagram-3 icon" style="color:#487DE7;"></div>
+					<h2 class="margin-top-xs" style="color:#487DE7;">Remix</h2>
+					<div>extend existing themes and templates</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /creators">
+					<div class="bi bi-cloud-arrow-up icon" style="color:#487DE7;"></div>
+					<h2 class="margin-top-xs" style="color:#487DE7;">Distribute</h2>
+					<div>packages with Git or .zip</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /creators">
+					<div class="bi bi-gear icon" style="color:#487DE7;"></div>
+					<h2 class="margin-top-xs" style="color:#487DE7;">Deploy</h2>
+					<div>vetted packages from trusted sources</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="align-center">
+			<h1 style="color:#FFA500;">Personal</h1>
+		
+			<div class="columns-4">
+				<div role="link" class="card padded" script="on click go to url /end-users">
+					<div class="bi bi-incognito icon" style="color:#FFA500;"></div>
+					<h2 class="margin-top-xs" style="color:#FFA500;">Private</h2>
+					<div>own your data, own your graph</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /end-users">
+					<div class="bi bi-shield icon" style="color:#FFA500;"></div>
+					<h2 class="margin-top-xs" style="color:#FFA500;">Safe</h2>
+					<div>powerful rules and follower-only feeds to limit malicious actors</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /end-users">
+					<div class="bi bi-heart icon" style="color:#FFA500;"></div>
+					<h2 class="margin-top-xs" style="color:#FFA500;">Trustworthy</h2>
+					<div>custom apps that can't be abused</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /end-users">
+					<div class="bi bi-fingerprint icon" style="color:#FFA500;"></div>
+					<h2 class="margin-top-xs" style="color:#FFA500;">Tailored</h2>
+					<div>user choice without decision overload</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="align-center">
+			<h1 style="color:#E81416;">Scalable</h1>
+
+			<div class="columns-4">
+				<div role="link" class="card padded" script="on click go to url /administrators">
+					<div class="bi bi-bounding-box icon" style="color:#E81416;"></div>
+					<h2 class="margin-top-xs" style="color:#E81416;">DevOps Ready</h2>
+					<div>easy, repeatable builds and deployments</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /administrators">
+					<div class="bi bi-hdd-rack icon" style="color:#E81416;"></div>
+					<h2 class="margin-top-xs" style="color:#E81416;">Cluster Ready</h2>
+					<div>start from command line, config files, or shared database</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /administrators">
+					<div class="bi bi-share icon" style="color:#E81416;"></div>
+					<h2 class="margin-top-xs" style="color:#E81416;">Shared Services</h2>
+					<div>shared cache, queue, and crawler helps small sites scale</div>
+				</div>
+				<div role="link" class="card padded" script="on click go to url /administrators">
+					<div class="bi bi-cup-hot icon" style="color:#E81416;"></div>
+					<h2 class="margin-top-xs" style="color:#E81416;">Minimal Deps</h2>
+					<div>Minimal dependencies to simplify your environment</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section>
+			<h1>Project Status</h1>
+			<p>After a long and winding journey, <a href="https://github.com/EmissarySocial/emissary" rel="nofollow" tabindex="0">Emissary version 0.6.0</a> is available as a technical preview for <a href="creators" rel="nofollow" tabindex="0">app creators</a> and <a href="/developers" rel="nofollow" tabindex="0">core developers</a>.  And, we are pleased to host emissary servers for a limited number of live websites and users.</p>
+			<p><strong>More Project Updates</strong></p>
+			<ul>
+				<li><a href="/status" rel="nofollow" tabindex="0">Current project status</a></li>
+				<li><a href="https://github.com/EmissarySocial/emissary" rel="nofollow" tabindex="0">GitHub repository</a></li>
+				<li><a href="https://trello.com/b/Ir9dDTdu/emissary-dev" rel="nofollow" tabindex="0">Project Kanban (Trello)</a></li>
+			</ul>
+		</section>
+	</div>
+</div>
