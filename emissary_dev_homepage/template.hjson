@@ -1,6 +1,6 @@
 {
 	templateId: emissary_dev_homepage
-	templateRole: homepage
+	templateRole: home
 	containedBy: ["top"]
 	sort: -1
 	label: Emissary.dev Home Page
