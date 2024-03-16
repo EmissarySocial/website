@@ -1,0 +1,30 @@
+<div class="page">
+
+	<div id="menu-bar">
+		<div class="left">
+			<a href="/{{.StreamID}}">&larr; View</a>
+
+			{{- if .UserCan "edit" -}}
+				<a href="/{{.StreamID}}/edit" class="bold">Children</a>
+			{{- end -}}
+
+			{{- if .UserCan "properties" -}}
+				<a hx-get="/{{.StreamID}}/properties">Info</a>
+			{{- end -}}
+
+			{{- if .UserCan "sharing" -}}
+				<a hx-get="/{{.StreamID}}/sharing">Sharing</a>
+			{{- end -}}
+		</div>
+
+		<div class="right">
+			{{- if .UserCan "delete" -}}
+				<a hx-get="/{{.StreamID}}/delete" class="text-red">Delete</a>
+			{{- end -}}
+		</div>
+
+	</div>
+
+	{{- template "children-sort" . -}}
+	
+</div>
