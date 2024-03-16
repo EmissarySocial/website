@@ -10,6 +10,7 @@
 	}
 
 	.banner {
+		margin:0px;
 		color:white;
 		background-size: cover;
 		background-color: #0187D0;
@@ -24,14 +25,25 @@
 		font-family: 'custom-font', sans-serif;
 	}
 
-	h1 {
-		font-family: 'custom-font', sans-serif;
-		color:#184372;
-	}
-
 	.banner .with-shadow {
 		border: solid 1px  rgba(0,0,0,0.3);
 		box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	}
+
+	.quote {
+ 		color:white;
+		background-color: #777780; /*#70369D;*/
+		padding:40px 0px;
+ 	}
+
+	.quote a {
+		color:white;
+		text-decoration: underline;
+	}
+
+	h1 {
+		font-family: 'custom-font', sans-serif;
+		color:#4B369D; /*#184372;*/
 	}
 
 	.icon {
@@ -52,12 +64,12 @@
 	}
 </style>
 
-<div class="banner margin-bottom-xl">
+<div class="banner">
 	<div class="margin-none align-center">
 		<img src="/.templates/emissary_dev_homepage/resources/Emissary-Wordmark-White-1200.png" class="margin-top-xl" style="height:64px;">
 	</div>
 
-	<div class="margin-top-none margin-bottom-xl align-center">
+	<div class="margin-none align-center">
 		<h1>The Social Web Toolkit</h1>
 
 		<div>
@@ -65,6 +77,16 @@
 		</div>
 	</div>
 </div>
+
+<section class="quote">
+	<div class="text-lg margin-horizontal-auto align-center width-60-percent">
+		<b>Emissary</b> is the standalone Fediverse server designed for 
+		<a href="/people">end&nbsp;users</a>, 
+		<a href="/creators">app&nbsp;creators</a>, and 
+		<a href="/admins">hosting&nbsp;admins</a> &mdash;
+		that gives everyone powerful new ways to <b>join the social web</b>.
+	</div>
+</section>
 
 <!--
 Red #E81416
@@ -75,16 +97,10 @@ Blue #487DE7
 Indigo #4B369D
 Violet #70369D
 -->
+
+
 <div class="flex-column flex-align-center">
 	<div class="framed">
-
-		<div class="text-lg margin-bottom-xl margin-horizontal-auto align-center width-60-percent">
-			<b>Emissary</b> is the standalone Fediverse server designed for 
-			<a href="/end-users">end&nbsp;users</a>, 
-			<a href="/creators">app&nbsp;creators</a>, and 
-			<a href="/administrators">hosting&nbsp;admins</a> &mdash;
-			that gives everyone powerful new ways to <b>join the social web</b>.
-		</div>
 
 		<section class="align-center">
 			<h1>Multi-Network</h1>
@@ -93,12 +109,12 @@ Violet #70369D
 				<div role="link" class="card padded" script="on click go to url /protocols">
 					<div class="margin-none"><img src="/.templates/emissary_dev_homepage/resources/activitypub.svg" style="height:5em; max-width:100%;"></div>
 					<h2 class="margin-top-none">ActivityPub</h2>
-					<div>a good citizen on the Fediverse</div>
+					<div>A good citizen on the Fediverse</div>
 				</div>
 				<div role="link" class="card padded" script="on click go to url /protocols">
 					<div class="bi bi-rss icon" style="color:#ffa500;"></div>
 					<h2 class="margin-top-xs">Real-time RSS</h2>
-					<div>follow new and blogs using WebSub</div>
+					<div>Follow and share news sites and blogs using WebSub</div>
 				</div>
 				<div role="link" class="card padded" script="on click go to url /protocols">
 					<div class="margin-none"><img src="/.templates/emissary_dev_homepage/resources/indiewebcamp-logo-horizontal.png" style="height:5em; max-width:100%;"></div>
@@ -106,7 +122,7 @@ Violet #70369D
 					<div>MicroFormats and WebMentions for personal websites</div>
 				</div>
 				<div role="link" class="card padded" script="on click go to url /developers">
-					<div class="bi bi-three-dots icon"></div>
+					<div class="bi bi-three-dots icon" style="color:#4B369D;"></div>
 					<h2 class="margin-top-xs">More</h2>
 					<div>the sky is the limit</div>
 				</div>
