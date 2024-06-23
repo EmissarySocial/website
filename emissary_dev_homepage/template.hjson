@@ -3,7 +3,7 @@
 	templateRole: home
 	containedBy: ["top"]
 	sort: -1
-	label: Emissary.dev Home Page
+	label: Home Page for Emissary.dev
 	description: Custom HTML for the home page of emissary.dev
 	icon: home
 	schema: {
