@@ -18,8 +18,7 @@
 			roles: ["owner", "editor"]
 			steps: [
 				{do:"set-data", values:{token:"home", label:"Home"}}
-				{do:"save"}
-				{do:"publish"}
+				{do:"save-and-publish"}
 			]
 		}
 		view: {
