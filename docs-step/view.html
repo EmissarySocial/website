@@ -9,7 +9,7 @@
 
 		{{- if .UserCan "edit" -}}
 			<div class="text-xs">
-				<a hx-get="/{{.Token}}/edit" role="button" class="button">Edit</a>
+				<button hx-get="/{{.Token}}/edit">Edit</button>
 			</div>
 		{{- end -}}
 	</div>

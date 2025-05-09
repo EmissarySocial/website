@@ -30,7 +30,7 @@
 					</td>
 					<td class="align-right">
 						<a href="/{{.StreamID}}/edit" class="button text-sm margin-none">Edit</a>
-						<a hx-get="/{{.StreamID}}/delete" class="button text-sm text-red margin-none">Delete</a>
+						<button hx-get="/{{.StreamID}}/delete" class="text-sm text-red margin-none">Delete</button>
 					</td>
 				</tr>
 			{{- end -}}
@@ -39,7 +39,7 @@
 	</form>
 
 	<div>
-		<a hx-get="/{{.StreamID}}/add-child" class="button primary">{{icon "add"}} Add Another</a>
+		<button hx-get="/{{.StreamID}}/add-child" class="primary">{{icon "add"}} Add Another</button>
 	</div>
 
 {{- else if .UserCan "add-child" -}}
@@ -49,7 +49,7 @@
 			<h1 class="text-gray">Add a Child Stream</h1>
 			<h2 class="text-gray">Place additional pages under this one in the site map, then organize them with the sort tool.</h2>
 			<br>
-			<a hx-get="/{{.StreamID}}/add-child" class="button primary">{{icon "add"}} Add a Stream</a>
+			<button hx-get="/{{.StreamID}}/add-child" class="primary">{{icon "add"}} Add a Stream</button>
 		</div>
 	</div>
 
