@@ -1,17 +1,13 @@
-<article class="padded card">
+<article>
 	
-	<div class="flex-row width-100%">
+	<div class="card padding margin-bottom-lg pos-relative">
+	
+	<h2 class="margin-top-none">{{.Label}}</h2>
 
-		<h2 class="flex-grow-1">
-			{{.Label}}
-			<span class="text-thin text-gray italics"> &middot; {{.Summary}}</span>
-		</h2>
+	<div class="text-lg text-gray margin-bottom-lg">{{.Summary | markdown}}</div>
 
-		{{- if .UserCan "edit" -}}
-			<div class="text-xs">
-				<button hx-get="/{{.Token}}/edit">Edit</button>
-			</div>
-		{{- end -}}
+	<div class="margin-bottom-lg">
+		{{.Data "content" | markdown}}
 	</div>
 
 	<div class="margin-bottom">
@@ -23,5 +19,13 @@
 	</div>
 
 	<code class="block">{{.Data "code"}}</code>
+
+	{{- if .UserCan "edit" -}}
+		<div class="pos-absolute-top-right text-xs">
+			<button hx-get="/{{.Token}}/edit">Edit</button>
+		</div>
+	{{- end -}}
+
+	</div>
+
 </article>
-<br>
