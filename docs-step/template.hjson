@@ -1,6 +1,7 @@
 {
 	templateId: docs-step
 	templateRole: article
+	model: Stream
 	containedBy: ["collection"]
 	label: Emissary Website - Step
 	description: Contains documentation about a single pipeline step
@@ -11,15 +12,22 @@
 			label: {type: "string"}
 			summary: {type: "string"}
 			data: {type:"object", properties: {
+				content: {type: "string"}
 				get: {type: "string"}
 				post: {type: "string"}
 				code: {type: "string"}
 			}}
 		}
 	}
+	states: {
+		default: {
+			label: Default,
+			description: This item is not visible on the website
+		}
+	}
 	actions: {
 		create: {
-			roles: ["owner", "editor"]
+			roles: ["owner"]
 			steps: [
 				{do: "set-data", values: {label: "Step Name"}}				
 				{do:"save"}
@@ -28,24 +36,54 @@
 			]
 		}
 		view: {
-			do: view-html
+			steps: [
+				{do: "view-html"}
+			]
 		}
 		edit: {
-			roles: ["owner", "editor"]
+			roles: ["owner"]
 			steps:[
 				{do: "as-modal", class:"large", steps: [
 					{
 						do:edit
 						form: {
-							type: layout-vertical
+							type: layout-tabs
 							label: Edit Step
 							description: This will update the object in this state
 							children: [
-								{type: "text",     path: "label", label: "Label"}
-								{type: "text",     path: "summary", label: "Summary"}
-								{type: "textarea", path: "data.get", label: "GET Description"}
-								{type: "textarea", path: "data.post", label: "POST Description"}
-								{type: "textarea", path: "data.code", label: "Code", options: {rows: 6}}
+								{
+									type:layout-vertical
+									label:Summary
+									children: [
+										{type: "text", path: "label", label: "Label"}
+										{type: "textarea", path: "summary", label: "Summary"}
+										{type: "textarea", path: "data.content.", label: "Content", options: {rows: 10}}
+									]
+
+								}
+								{
+									type:layout-vertical
+									label:Get
+									children: [
+										{type: "textarea", path: "data.get", label: "GET Description", options: {rows: 10}}
+									]
+
+								}
+								{
+									type:layout-vertical
+									label:Post
+									children: [
+										{type: "textarea", path: "data.post", label: "POST Description", options: {rows: 10}}
+									]
+
+								}
+								{
+									type:layout-vertical
+									label:Code
+									children: [
+										{type: "textarea", path: "data.code", label: "Code", options: {rows: 10}}
+									]
+								}
 							]
 						}
 						options:["delete:/{{.StreamID}}/delete"]
@@ -59,7 +97,7 @@
 			roles: ["owner"]
 			steps: [
 				{do: "delete", title: "Delete this Article?", message: "All content in '{{.Label}}'.  There is NO UNDO."}
-				{do: "unpublish"}
+				{do: "unpublish", state:"default"}
 				{do: "refresh-page"}
 			]
 		}

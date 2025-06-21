@@ -1,6 +1,7 @@
 {
 	templateId: emissary_dev_homepage
 	templateRole: home
+	model: Stream
 	containedBy: ["top"]
 	sort: -1
 	label: Home Page for Emissary.dev
@@ -13,20 +14,32 @@
 			summary: {type: "string"}
 		}
 	}
+	states: {
+		default: {
+			label: Default
+			description: This item is not visible on the website
+		}
+		published: {
+			label: Published
+			description: This item is visible on the website
+		}
+	}
 	actions: {
 		create: {
-			roles: ["owner", "editor"]
+			roles: ["owner"]
 			steps: [
 				{do:"set-data", values:{token:"home", label:"Home"}}
 				{do:"save-and-publish"}
 			]
 		}
 		view: {
-			roles: ["anonymous", "viewer"]
-			do: view-html
+			roles: ["anonymous"]
+			steps: [
+				{do:"view-html"}
+			]
 		}
 		edit: {
-			roles: ["owner", "editor"]
+			roles: ["owner"]
 			steps: [
 				{do:"view-html", file:"children"}
 				{do:"sort", keys:"_id", values:"rank"}
@@ -39,7 +52,7 @@
 			]
 		}
 		properties: {
-			roles: ["editor", "owner"]
+			roles: ["owner"]
 			steps: [
 				{do:"as-modal", steps: [
 					{do:"edit"
@@ -57,17 +70,8 @@
 				{do:"save", comment:"Properties updated by {{.Author}}"}
 			]
 		}
-		sharing: {
-			roles: ["owner"]
-			steps: [
-				{do:"as-modal", steps: [
-					{do:"set-simple-sharing", roles: ["viewer"], title:"Who Can See This Article?", message:"Select who can view and comment on this article."}
-					{do:"save", message:"Sharing updated by {{.Author}}"}
-				]}
-			]
-		}
 		add-child:{
-			roles: ["owner", "editor"]
+			roles: ["owner"]
 			steps: [
 				{do:"add-stream", location:"child", title:"+ Add a Stream"}
 			]
