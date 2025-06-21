@@ -11,11 +11,11 @@
 	</div>
 
 	<div class="margin-bottom">
-		<b>GET:</b> {{.Data "get"}}
+		<b>GET:</b> {{.Data "get" | markdown}}
 	</div>
 
 	<div class="margin-bottom">
-		<b>POST:</b> {{.Data "post"}}
+		<b>POST:</b> {{.Data "post" | markdown}}
 	</div>
 
 	<code class="block">{{.Data "code"}}</code>
