@@ -1,10 +1,11 @@
 {
 	templateId: emissary_dev_homepage
+	category: Custom
 	templateRole: home
 	model: Stream
 	containedBy: ["top"]
 	sort: -1
-	label: Home Page for Emissary.dev
+	label: Emissary.dev: Home Page
 	description: Custom HTML for the home page of emissary.dev
 	icon: home
 	schema: {
